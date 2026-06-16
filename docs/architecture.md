@@ -128,7 +128,7 @@ Router 不只返回目标路线，还会返回：
 `app/services/metadata_store.py` 使用 Python 标准库 `sqlite3` 管理本地元数据，不引入复杂 ORM。数据库默认位置是：
 
 ```text
-D:\codex\DataInsight-Agent\sqlite\metadata.sqlite3
+./storage/sqlite/metadata.sqlite3
 ```
 
 当前有四张表：

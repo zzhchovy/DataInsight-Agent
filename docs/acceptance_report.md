@@ -137,7 +137,7 @@ backend_notice: Google Agentic RAG 未配置，缺少：GOOGLE_CLOUD_PROJECT, GO
 运行命令：
 
 ```powershell
-& D:\codex\DataInsight-Agent\.venv\Scripts\python.exe scripts\eval_agentic_rag.py
+.\.venv\Scripts\python.exe scripts\eval_agentic_rag.py
 ```
 
 当前结果：
@@ -157,7 +157,7 @@ latency_ms_max: 3
 评测报告输出：
 
 ```text
-D:\codex\DataInsight-Agent\eval_reports\agentic_rag_eval.json
+eval_reports\agentic_rag_eval.json
 ```
 
 ## 9. 当前风险和未完成项

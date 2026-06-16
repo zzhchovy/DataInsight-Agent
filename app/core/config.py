@@ -11,7 +11,7 @@ class Settings(BaseSettings):
 
     app_name: str = "DataInsight-Agent"
     storage_dir: Path = Field(
-        default=Path(r"D:\codex\DataInsight-Agent"),
+        default=Path("storage"),
         validation_alias="DATAINSIGHT_STORAGE_DIR",
     )
     vector_collection: str = Field(

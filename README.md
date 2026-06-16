@@ -97,11 +97,7 @@ python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 ```
 
-也可以使用本机已有虚拟环境，例如：
-
-```powershell
-D:\codex\DataInsight-Agent\.venv\Scripts\python.exe -m pip install -r requirements.txt
-```
+也可以使用本机已有虚拟环境，只需要在启动脚本中把 `-VenvPython` 指向实际的 `python.exe`。
 
 ### 2. 一键启动
 
@@ -109,7 +105,7 @@ D:\codex\DataInsight-Agent\.venv\Scripts\python.exe -m pip install -r requiremen
 powershell -ExecutionPolicy Bypass -File scripts\start_local.ps1 -VenvPython .\.venv\Scripts\python.exe
 ```
 
-如果你使用的是 `D:\codex\DataInsight-Agent\.venv`，也可以直接运行：
+如果虚拟环境位于项目根目录的 `.venv`，也可以直接运行：
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File scripts\start_local.ps1

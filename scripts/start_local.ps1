@@ -2,17 +2,20 @@ param(
     [string]$HostAddress = "127.0.0.1",
     [int]$ApiPort = 8000,
     [int]$UiPort = 8501,
-    [string]$VenvPython = "D:\codex\DataInsight-Agent\.venv\Scripts\python.exe",
-    [string]$LogDir = "D:\codex\DataInsight-Agent\logs"
+    [string]$VenvPython = "",
+    [string]$LogDir = ""
 )
 
 $ErrorActionPreference = "Stop"
 
 $ProjectRoot = Resolve-Path (Join-Path $PSScriptRoot "..")
 $LocalVenvPython = Join-Path $ProjectRoot ".venv\Scripts\python.exe"
+if ([string]::IsNullOrWhiteSpace($LogDir)) {
+    $LogDir = Join-Path $ProjectRoot "logs"
+}
 
 function Resolve-Python {
-    if (Test-Path $VenvPython) {
+    if (-not [string]::IsNullOrWhiteSpace($VenvPython) -and (Test-Path $VenvPython)) {
         return $VenvPython
     }
     if (Test-Path $LocalVenvPython) {

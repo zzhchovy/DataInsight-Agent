@@ -5,8 +5,8 @@
 启动服务：
 
 ```powershell
-cd C:\Users\26976\Documents\DataInsight-Agent项目
-& D:\codex\DataInsight-Agent\.venv\Scripts\python.exe -m uvicorn app.main:app --host 127.0.0.1 --port 8000
+cd path\to\DataInsight-Agent
+.\.venv\Scripts\python.exe -m uvicorn app.main:app --host 127.0.0.1 --port 8000
 ```
 
 打开 Swagger：
@@ -18,7 +18,7 @@ http://127.0.0.1:8000/docs
 导入 energy demo：
 
 ```powershell
-& D:\codex\DataInsight-Agent\.venv\Scripts\python.exe scripts\ingest_energy_demo.py
+.\.venv\Scripts\python.exe scripts\ingest_energy_demo.py
 ```
 
 数据集 ID：
