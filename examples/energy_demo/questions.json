@@ -1,0 +1,18 @@
+[
+  {
+    "question": "根据文档，影响锅炉效率的因素有哪些？",
+    "expected_route": "rag"
+  },
+  {
+    "question": "上传数据中 boiler_efficiency_pct 的平均值是多少？",
+    "expected_route": "data"
+  },
+  {
+    "question": "画出 load_mw 和 boiler_efficiency_pct 的趋势图。",
+    "expected_route": "chart"
+  },
+  {
+    "question": "生成一份简短的运行分析报告。",
+    "expected_route": "report"
+  }
+]

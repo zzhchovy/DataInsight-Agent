@@ -1,0 +1,27 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+.env
+.streamlit/secrets.toml
+
+# Local generated data
+storage/
+uploads/
+vector_db/
+charts/
+sqlite/
+logs/
+demo_artifacts/
+private/
+*.sqlite
+*.db
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
